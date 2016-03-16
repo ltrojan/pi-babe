@@ -1,7 +1,4 @@
-# hello
-
 import StringIO
-import time
 import picamera
 
 
