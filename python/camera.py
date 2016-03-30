@@ -1,11 +1,10 @@
-import StringIO
+from babe_cam import cam_io
+import io
 import picamera
-import cv2
 
 
 if __name__ == "__main__":
     cam = picamera.PiCamera()
-    buf = StringIO.StringIO()
-    cam.capture(buf, 'png')
-    cv2.imwrite('test.png', buf)
+    img = cam_io.get_img(cam)
+    print img.shape
     cam.close()
