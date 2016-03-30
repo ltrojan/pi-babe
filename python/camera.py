@@ -1,5 +1,4 @@
 from babe_cam import cam_io
-import io
 import picamera
 
 
